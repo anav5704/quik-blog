@@ -25,6 +25,14 @@ body {
   overflow-x: hidden;
 }
 
+main {
+    background-color: #1e1e1e;
+    flex-grow: 1;
+    margin: 20px;
+    margin-top: 0px;
+    border-radius: 15px;
+}
+
 /* HEADINGS ------------------------------------- */
 h1,
 h2,

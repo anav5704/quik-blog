@@ -1,7 +1,8 @@
-.wrapper {
+.header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 25px;
 }
 
 .logo {
@@ -23,7 +24,7 @@
   display: none;
   margin: 0;
   padding: 0;
-  font-size: 0.7rem;
+  font-size: 17px;
 }
 
 .header li a {
@@ -34,7 +35,7 @@
 }
 
 .header li a:hover {
-  color: var(--qwik-light-blue);
+  text-decoration: underline;
 }
 
 @media (min-width: 450px) {
