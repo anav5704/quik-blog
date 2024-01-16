@@ -11,7 +11,7 @@ export default component$(() => {
 
     return (
         <div>
-            <Modal>
+            <Modal title="QWIK">
                 <div q:slot="content">
                     Main content
                 </div>

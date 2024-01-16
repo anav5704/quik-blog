@@ -18,3 +18,8 @@
   position: relative;
   max-width: 90%;
 }
+
+.title {
+    margin-bottom: 10px;
+    font-size: 30px;
+}
