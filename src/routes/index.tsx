@@ -16,11 +16,13 @@ export default component$(() => {
     })
 
     return (
-        <div>
+        <div class="grid grid-cols-3 gap-5" >
             {blogs.map((blog) => (
-                <div>
+                <div key={blog.id} class="bg-zinc-800 col-span-1 rounded-xl p-3">
                     <Link href={`/blogs/${blog.id}`}>
-                        {blog.title}
+                        <p class="text-xl font-semibold">{blog.title}</p>
+                        <br />
+                        <p class="line-clamp-2">{blog.content}</p>
                     </Link>
                 </div>
             ))}

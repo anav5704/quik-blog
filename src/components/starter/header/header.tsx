@@ -13,11 +13,9 @@ export default component$(() => {
             </div>
             <ul>
                 <li>
-                    <Link href="/">Home</Link>
+                    <Link href="/">Blogs</Link>
                 </li>
-                <li>
-                    <Link href="/blogs">Blogs</Link>
-                </li>
+
                 <li>
                     <Link href="/about">About</Link>
                 </li>

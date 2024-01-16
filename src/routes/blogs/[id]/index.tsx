@@ -7,7 +7,7 @@ export default component$(() => {
 
     return (
         <>
-            <h1>{blogs[parseInt(url.params.id) - 1].title}</h1>
+            <h1 class="font-bold">{blogs[parseInt(url.params.id) - 1].title}</h1>
             <p>{blogs[parseInt(url.params.id) - 1].content}</p>
         </>
     )
