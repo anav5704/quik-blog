@@ -1,4 +1,4 @@
-import { component$, useSignal, useStore } from "@builder.io/qwik";
+import { $, component$, useSignal, useStore } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 
 import Counter from "../components/starter/counter/counter";
@@ -8,17 +8,23 @@ import Starter from "../components/starter/next-steps/next-steps";
 import Modal from "~/components/modal/modal";
 
 export default component$(() => {
+    const isOpen = useSignal(false)
+
+    const close = $(() => {
+        isOpen.value = false
+    })
 
     return (
         <div>
-            <Modal title="QWIK">
+        <button onClick$={() => isOpen.value = true}>Open Modal</button>
+            {isOpen.value && (<Modal close={close} title="QWIK">
                 <div q:slot="content">
                     Main content
                 </div>
                 <div q:slot="footer">
                     Footer
                 </div>
-            </Modal>
+            </Modal>)}
         </div>
     );
 });
