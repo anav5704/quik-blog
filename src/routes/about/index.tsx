@@ -5,16 +5,9 @@ export default component$(() => {
     useStyles$(Styles)
 
     return (
-        <main>
+        <>
             <h1>About Page</h1>
-            <article>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur tempore mollitia optio voluptates veniam iusto sit architecto eos! Veritatis, vitae ut? Quos odit eaque eum consequatur molestiae aut ab laudantium quaerat vitae facere? Ipsum incidunt dolor sapiente voluptatum quas iste asperiores dolorum ea, nisi quasi praesentium harum vero, reprehenderit alias?</p>
-                <br />
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur tempore mollitia optio voluptates veniam iusto sit architecto eos! Veritatis, vitae ut? Quos odit eaque eum consequatur molestiae aut ab laudantium quaerat vitae facere? Ipsum incidunt dolor sapiente voluptatum quas iste asperiores dolorum ea, nisi quasi praesentium harum vero, reprehenderit alias?</p>
-                <br />
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur tempore mollitia optio voluptates veniam iusto sit architecto eos! Veritatis, vitae ut? Quos odit eaque eum consequatur molestiae aut ab laudantium quaerat vitae facere? Ipsum incidunt dolor sapiente voluptatum quas iste asperiores dolorum ea, nisi quasi praesentium harum vero, reprehenderit alias?</p>
-                <br />
-            </article>
-        </main>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo provident similique officia quae, ducimus nisi quos commodi? Possimus rem quibusdam voluptas veniam dolores dicta molestias cumque harum eaque exercitationem veritatis vitae unde, tempore quam iure facere nobis porro numquam eos quae voluptates praesentium distinctio odio dolor. Quas sit consectetur harum!</p>
+        </>
     )
 })

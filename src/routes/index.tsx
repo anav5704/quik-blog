@@ -1,11 +1,12 @@
 import { $, component$, useSignal, useStore } from "@builder.io/qwik";
-import type { DocumentHead } from "@builder.io/qwik-city";
+import { Link, type DocumentHead } from "@builder.io/qwik-city";
 
 import Counter from "../components/starter/counter/counter";
 import Hero from "../components/starter/hero/hero";
 import Infobox from "../components/starter/infobox/infobox";
 import Starter from "../components/starter/next-steps/next-steps";
 import Modal from "~/components/modal/modal";
+import { blogs } from "../../data/db"
 
 export default component$(() => {
     const isOpen = useSignal(false)
@@ -16,7 +17,14 @@ export default component$(() => {
 
     return (
         <div>
-        <button onClick$={() => isOpen.value = true}>Open Modal</button>
+            {blogs.map((blog) => (
+                <div>
+                    <Link href={`/blogs/${blog.id}`}>
+                        {blog.title}
+                    </Link>
+                </div>
+            ))}
+            {/* <button onClick$={() => isOpen.value = true}>Open Modal</button>
             {isOpen.value && (<Modal close={close} title="QWIK">
                 <div q:slot="content">
                     Main content
@@ -24,7 +32,7 @@ export default component$(() => {
                 <div q:slot="footer">
                     Footer
                 </div>
-            </Modal>)}
+            </Modal>)} */}
         </div>
     );
 });
